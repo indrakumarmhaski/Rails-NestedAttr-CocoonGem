@@ -11,14 +11,14 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, class: 'form-control' %>
   </div>
 
   <div class="field">
@@ -27,7 +27,7 @@
     <% end %>
 
     <div>
-      <%= link_to_add_association 'Add Task', form, :tasks%>
+      <%= link_to_add_association 'Add Task', form, :tasks, class: 'btn btn-primary btn-lg'%>
     </div>
   </div>
 
